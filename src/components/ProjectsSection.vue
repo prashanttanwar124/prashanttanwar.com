@@ -162,9 +162,11 @@ onBeforeUnmount(() => mm?.revert())
 }
 
 .proj h3 {
-  font-size: clamp(34px, 4.6vw, 64px);
+  font-size: clamp(26px, 3.6vw, 52px);
   font-weight: 800;
   margin-bottom: 20px;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .desc {
