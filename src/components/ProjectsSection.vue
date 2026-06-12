@@ -54,6 +54,13 @@ onMounted(() => {
   mm = gsap.matchMedia()
   mm.add('(min-width: 861px)', () => {
     const distance = () => track.value.scrollWidth - window.innerWidth
+    // progress values where each panel sits centered in the viewport
+    const snapPoints = () => {
+      const d = distance()
+      return [...track.value.children].map((c) =>
+        gsap.utils.clamp(0, 1, (c.offsetLeft - (window.innerWidth - c.offsetWidth) / 2) / d)
+      )
+    }
     gsap.to(track.value, {
       x: () => -distance(),
       ease: 'none',
@@ -64,6 +71,12 @@ onMounted(() => {
         scrub: 1,
         pin: true,
         invalidateOnRefresh: true,
+        snap: {
+          snapTo: (value) =>
+            snapPoints().reduce((a, b) => (Math.abs(b - value) < Math.abs(a - value) ? b : a)),
+          duration: { min: 0.2, max: 0.6 },
+          ease: 'power2.out',
+        },
       },
     })
   })
@@ -162,7 +175,7 @@ onBeforeUnmount(() => mm?.revert())
 }
 
 .proj h3 {
-  font-size: clamp(26px, 3.6vw, 52px);
+  font-size: clamp(24px, 2.9vw, 52px);
   font-weight: 800;
   margin-bottom: 20px;
   max-width: 100%;
