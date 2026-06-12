@@ -62,7 +62,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', fitLines))
           booking apps, brand sites. JavaScript is my native language.
         </p>
         <div ref="cta" class="cta">
-          <a href="#projects" class="pill pill-solid">My projects</a>
+          <a href="#projects" class="pill pill-solid">Selected works</a>
           <a href="#contact" class="pill">Say hello</a>
         </div>
       </div>

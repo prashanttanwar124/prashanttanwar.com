@@ -90,7 +90,7 @@ onBeforeUnmount(() => mm?.revert())
     <div class="track" ref="track">
       <div class="panel intro">
         <span class="sec-index">(03)</span>
-        <h2 class="sec-title">My<br /><span class="outline">projects</span></h2>
+        <h2 class="sec-title intro-title">Selected<br /><span class="outline">works</span></h2>
         <p class="mono drag-hint">keep scrolling — gallery moves sideways →</p>
       </div>
       <article v-for="p in projects" :key="p.n" class="panel proj hover-target" data-cursor="view">
@@ -138,6 +138,10 @@ onBeforeUnmount(() => mm?.revert())
 
 .intro {
   width: 60vw;
+}
+
+.intro-title {
+  font-size: clamp(36px, 5.2vw, 84px);
 }
 
 .drag-hint {
