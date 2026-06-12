@@ -10,7 +10,7 @@ const jobs = [
   },
   {
     n: '02',
-    role: 'Inventory & Customer Service',
+    role: 'POS Developer & Store Operations',
     company: 'Maniratn Jewellers',
     period: 'retail + code',
     desc: 'Ran stock and kept customers happy — then built the store its own point-of-sale software: billing, inventory and daily reports, still in use on the shop floor.',
