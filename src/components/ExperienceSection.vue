@@ -10,19 +10,11 @@ const jobs = [
   },
   {
     n: '02',
-    role: 'Creative Coding Instructor',
-    company: 'Fortify Solutions',
-    period: 'teaching',
-    desc: 'Taught humans to bend machines toward art — generative sketches, animation, interactive toys, first lines of code.',
-    rotate: '1deg',
-  },
-  {
-    n: '03',
     role: 'Inventory & Customer Service',
     company: 'Maniratn Jewellers',
-    period: 'retail era',
-    desc: 'Stock systems, leadership and keeping customers happy around very shiny, very expensive objects.',
-    rotate: '-0.6deg',
+    period: 'retail + code',
+    desc: 'Ran stock and kept customers happy — then built the store its own point-of-sale software: billing, inventory and daily reports, still in use on the shop floor.',
+    rotate: '1deg',
   },
 ]
 </script>

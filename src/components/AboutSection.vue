@@ -71,7 +71,7 @@ const facts = [
   ['name', 'Prashant Tanwar'],
   ['role', 'Full-stack developer'],
   ['edu', 'BCA + Conestoga College'],
-  ['side quest', 'Teaching creative code'],
+  ['latest build', 'Aomclinic — booking app'],
 ]
 
 onMounted(() => {
@@ -99,14 +99,17 @@ onBeforeUnmount(() => cancelAnimationFrame(rafId))
           <h2 class="sec-title">Human<br /><span class="outline">behind code</span></h2>
         </div>
         <p class="reveal">
-          Full-stack developer who treats the browser like a playground.
-          At <strong>Brandshark</strong> I shipped web services, APIs and interfaces
-          end-to-end; at <strong>Fortify Solutions</strong> I taught creative coding —
-          the art of making machines do beautiful, useless, wonderful things.
+          I'm a full-stack developer who likes building things people actually
+          use. At <strong>Brandshark</strong> I shipped web services, APIs and
+          interfaces end-to-end — from the database schema to the last pixel,
+          for real clients with real deadlines.
         </p>
         <p class="reveal">
-          Before that: inventory &amp; customer service at <strong>Maniratn Jewellers</strong>,
-          where I learned that people skills compile everywhere.
+          My favourite projects solve everyday problems: I built the
+          point-of-sale software that <strong>Maniratn Jewellers</strong> runs
+          their store on, and <strong>Aomclinic</strong>, an appointment booking
+          app for clinics. Years behind a shop counter taught me how software
+          feels from the customer's side — I build with that in mind.
         </p>
         <ul class="facts reveal">
           <li v-for="[k, v] in facts" :key="k">

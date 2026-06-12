@@ -27,8 +27,7 @@ const marqueeItems = [
   'Full-Stack Developer',
   'Creative Coder',
   'UI Engineer',
-  'Teacher',
-  'Based on Earth',
+  'Laravel + Vue',
 ]
 
 onMounted(() => {
@@ -59,8 +58,8 @@ onBeforeUnmount(() => window.removeEventListener('resize', fitLines))
       </h1>
       <div class="hero-meta">
         <p class="sub">
-          I build web services, APIs &amp; interfaces — and teach
-          creative coding. JavaScript is my native language.
+          I build web services, APIs &amp; interfaces — POS systems,
+          booking apps, brand sites. JavaScript is my native language.
         </p>
         <div ref="cta" class="cta">
           <a href="#projects" class="pill pill-solid">Selected works</a>

@@ -1,8 +1,8 @@
 <script setup>
 const rows = [
-  ['JavaScript', 'Vue.js', 'Three.js', 'GSAP', 'MySQL', 'Git', 'REST APIs'],
+  ['JavaScript', 'Vue.js', 'Laravel', 'Three.js', 'GSAP', 'MySQL', 'REST APIs'],
   ['Creative Coding', 'Generative Art', 'Canvas', 'UI Design', 'Web Animation'],
-  ['Teaching', 'Leadership', 'Team Management', 'Customer Service', 'English'],
+  ['Leadership', 'Team Management', 'Customer Service', 'Git', 'English'],
 ]
 </script>
 
